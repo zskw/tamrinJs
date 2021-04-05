@@ -27,13 +27,13 @@
       <div class="row">
         <div class="col-12 col-md-6 pr-md-0">
           <div class="tabel_left">
-            <table class="table">
-              <thead class="thead-dark">
-                <tr>
-                  <th scope="col">id</th>
-                  <th scope="col">name</th>
-                  <th scope="col">age</th>
-                  <th scope="col">delete</th>
+            <table class="table table-bordered text-center">
+              <thead">
+                <tr class="text-center">
+                  <th scope="col">آیدی</th>
+                  <th scope="col">اسم</th>
+                  <th scope="col">سن</th>
+                  <th scope="col">حذف</th>
                 </tr>
               </thead>
               <tbody id="myTable">
@@ -45,30 +45,32 @@
         <div class="col-12 col-md-6 p-0">
           <div class="form_right d-flex justify-content-center">
             <form>
-              <div class="form-group">
-                <label for="name">Enter your name</label>
-                <input
+              <div class="form-row text-right">
+                <div class="form-group col-md-6 ">
+                  <label for="name">اسم خود را وارد کنید</label>
+                  <input
                   type="text"
                   class="form-control"
                   id="name"
-                  placeholder="name.."
-                />
-              </div>
-              <div class="form-group">
-                <label for="age">Enter your age</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="age"
-                  placeholder="age.."
-                />
+                  placeholder="اسم..."
+                />  
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="age">سن خود را وارد کنید</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="age"
+                    placeholder="سن..."
+                  />
+                </div>
               </div>
               <button
                 type="button"
                 class="btn btn-primary"
                 onclick="addMember()"
               >
-                Submit
+                ثبت
               </button>
             </form>
           </div>
@@ -80,8 +82,8 @@
             <div class="input-group pr-md-5 pl-md-5">
               <input
                 type="text"
-                class="form-control mt-4"
-                placeholder="Search this blog"
+                class="form-control mt-4 searchbox"
+                placeholder="سرچ..."
                 id="searchBox"
               />
               <div class="input-group-append">
@@ -95,11 +97,11 @@
               </div>
             </div>
             <table class="table mt-5">
-              <thead class="thead-dark">
+              <table class="table table-bordered text-center">
                 <tr>
-                  <th scope="col">id</th>
-                  <th scope="col">name</th>
-                  <th scope="col">age</th>
+                  <th scope="col">آیدی</th>
+                  <th scope="col">اسم</th>
+                  <th scope="col">سن</th>
                 </tr>
               </thead>
               <tbody id="searchTable">
