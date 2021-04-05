@@ -1,0 +1,15 @@
+{
+  "name": "tamrin-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tamrin1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "lodash": "^4.17.21"
+  }
+}

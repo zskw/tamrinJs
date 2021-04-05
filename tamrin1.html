@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tamrin 1 js</title>
+
+    <link rel="stylesheet" href="tamrin1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!--<script src="./node_modules/lodash/"></script>!-->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="tamrin1.js"></script>
+  </head>
+  <body>
+    <div class="container_fluid">
+      <div class="row">
+        <div class="col-12 col-md-6 pr-md-0">
+          <div class="tabel_left">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">id</th>
+                  <th scope="col">name</th>
+                  <th scope="col">age</th>
+                  <th scope="col">delete</th>
+                </tr>
+              </thead>
+              <tbody id="myTable">
+                <tr></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 p-0">
+          <div class="form_right d-flex justify-content-center">
+            <form>
+              <div class="form-group">
+                <label for="name">Enter your name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="name.."
+                />
+              </div>
+              <div class="form-group">
+                <label for="age">Enter your age</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="age"
+                  placeholder="age.."
+                />
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary"
+                onclick="addMember()"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 pr-md-0">
+          <div class="search">
+            <div class="input-group pr-md-5 pl-md-5">
+              <input
+                type="text"
+                class="form-control mt-4"
+                placeholder="Search this blog"
+                id="searchBox"
+              />
+              <div class="input-group-append">
+                <button
+                  class="btn btn-secondary mt-4"
+                  type="button"
+                  onclick="search()"
+                >
+                <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <table class="table mt-5">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">id</th>
+                  <th scope="col">name</th>
+                  <th scope="col">age</th>
+                </tr>
+              </thead>
+              <tbody id="searchTable">
+                <tr></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 p-0 empety"></div>
+      </div>
+    </div>
+  </body>
+</html>
